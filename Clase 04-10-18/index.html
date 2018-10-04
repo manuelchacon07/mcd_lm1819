@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tablas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <table style="border: 1px solid blue; border-collapse: collapse; margin: 15px"
+            rules="groups">
+            <caption>Dias de la semana</caption>
+            <thead>
+                <tr style="border: 2px solid red">
+                    <th style="padding: 15px">Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2" style="border: 2px solid green">1</td>
+                    <td colspan="2" style="border: 2px solid orange">2</td>
+                </tr>
+                <tr>
+                    <td style="border: 2px solid green">5</td>
+                    <td style="border: 2px solid green"><table style="border: 1px solid blue; border-collapse: collapse"
+                        rules="groups">
+                        <caption>Dias de la semana</caption>
+                        <thead>
+                            <tr style="border: 2px solid red">
+                                <th>Lunes</th>
+                                <th>Martes</th>
+                                <th>Miércoles</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2" style="border: 2px solid green">1</td>
+                                <td colspan="2" style="border: 2px solid orange">2</td>
+                            </tr>
+                            <tr>
+                                <td style="border: 2px solid green">5</td>
+                                <td style="border: 2px solid green">6</td>
+                            </tr>
+                            <tr>
+                                <td style="border: 2px solid green">7</td>
+                                <td style="border: 2px solid green">8</td>
+                                <td style="border: 2px solid green">9</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td style="border: 2px solid black">100</td>
+                                <td style="border: 2px solid rgb(0, 0, 0)">200</td>
+                                <td style="border: 2px solid rgb(0, 0, 0)">300</td>
+                            </tr>
+                        </tfoot>
+            
+                    </table></td>
+                </tr>
+                <tr>
+                    <td style="border: 2px solid green">7</td>
+                    <td style="border: 2px solid green">8</td>
+                    <td style="border: 2px solid green">9</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td style="border: 2px solid black">100</td>
+                    <td style="border: 2px solid rgb(0, 0, 0)">200</td>
+                    <td style="border: 2px solid rgb(0, 0, 0)">300</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </body>
+</html>

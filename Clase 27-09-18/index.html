@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test-ejercicio02</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!--<body style="background-image: url('google.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed" >-->
+
+<!-- Forma resumida de la parte de ariba excepto el background-size "cover" que no se puede meter junto con los demas-->
+
+<body style="background: url('google.jpg') no-repeat center center fixed; background-size: cover;"> 
+    <!-- Enlaces -->
+        <a href="https://www.google.com/" target="_blank" hreflang="es" rel="next" type="text/html">Google</a> <!-- Abre el enlace en otra pestaña (_blank)-->
+        <a href="01.html">Ir a nueva</a>
+        <a href="c.web/datos.html">Ir a datos</a>
+        <a href="01.html#final">Ir al final de la primera pagina</a>
+    <!-- Imagenes -->
+        <img src="google.jpg" alt="Foto test" usemap="#letras" ismap="ismap">
+        <map name="letras" id="letras">
+            <area shape="rect" coords="89,295,410,632" href="https://www.google.com/" target="_blank"/>
+            <!-- cuando mapeamos una figura circular debemos de poner el centro del circulo interno y externo-->
+            <area shape="circle" coords="555,509,130" href="https://www.youtube.com/" target="_blank"/>
+            <area shape="poly" coords="993,367,1241,355,1259,723,989,721" href="https://www.amazon.es/" target="_blank"/>
+
+
+        </map>
+
+</body>
+</html>

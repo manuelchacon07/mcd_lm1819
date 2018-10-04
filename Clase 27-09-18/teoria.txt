@@ -1,0 +1,3 @@
+ hreflang="" <indica el lenguaje de la pagina al que vamos>
+ rel="" <especifica la relacion con el enlace>
+ type="" <indica el tipo de la pagina>

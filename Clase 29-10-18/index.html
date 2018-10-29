@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>formularios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <form action="gestiondatos.jsp" method="GET" >
+        <fieldset>
+        <legend>Datos del usuario</legend>
+        <label for="nombre">Nombre de usuario:</label><input type="text" value="" id="nombre" name="nombre" placeholder="Escribe un nombre" size="100" maxlength="100" pattern="[A-Z]{5}[0-9]{3}">
+        <br/>
+        <label for="provincias">provincias</label>
+        <select name="provincias" id="provincias">
+            <option value="SE">sevilla</option>
+            <option value="SE">Cadiz</option>
+            <option value="SE">huelva</option>
+        </select>
+        <br>
+
+        <label for="pregunta">Alumno?</label>
+        <input type="radio" name="pregunta" id="pregunta">si
+        <input type="radio" name="pregunta" id="pregunta">no
+        <br>
+
+        <input type="password" name="pass">
+        <br/>
+        <input type="reset" value="Borrar">
+        <br/>
+        <input type="submit" value="Enviar">
+
+    </form>
+    </fieldset>
+    <form>
+        <input type="number">
+        <input type="email">
+        <input type="url">
+        <input type="submit">
+        <input type="date">
+        <input type="time">
+        <input type="datetime-local">
+        <input type="month">
+        <input type="search">
+        <input type="tel">
+        <input type="range" min="10" max="200">
+        <input type="color">
+
+    </form>
+
+
+</body>
+</html>

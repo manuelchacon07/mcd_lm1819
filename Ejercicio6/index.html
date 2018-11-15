@@ -1,30 +1,141 @@
 <!--
     
-Los 12 nuevos tipos de elementos input.
-El nuevo elemento datalist, que contenga algunos nombres de provincia y un campo de texto que se relacione con él.
-Una caja de texto (<input type="text">), a la cual aplicar los atributos autofocus, placeholder, required y autocomplete.
-Una caja de texto que sólo pueda contener números (<input type="number">), cuyos valores tienen que estar comprendidos entre 0 y 10.
-Un campo de selección de ficheros (<input type="file">), al que aplicar el atributo multiple.
-Un campo de introducción de password (<input type="password">), donde el valor introducido debe cumplir lo siguiente: debe tener una longitud mínima de 8 caracteres, comenzar por un número y terminar en una letra mayúscula.
+El nuevo elemento datalist, que contenga algunos nombres de provincia y
+un campo de texto que se relacione con él.
 
-Acceder al formulario desde al menos 4 navegadores (2 de escritorio y 2 de dispositivos móviles), y comprobad el comportamiento y funcionamiento en cada elemento del formulario. Anotad dichos resultados en una hoja de cálculo para futuras referencias.
+
+Acceder al formulario desde al menos 4 navegadores (2 de escritorio y 2 de dispositivos móviles),
+y comprobad el comportamiento y funcionamiento en cada elemento del formulario.
+Anotad dichos resultados en una hoja de cálculo para futuras referencias.
 
 -->
 
-
-
-
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ejercicio6</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <datalist id="c.autonoma">
+            <option value="Andalucía"></option>
+            <option value="Aragón"></option>
+            <option value="Principado de Asturias"></option>
+            <option value="Baleares"></option>
+            <option value="Canarias"></option>
+            <option value="Cantabria"></option>
+            <option value="Castilla-La Mancha"></option>
+            <option value="Castilla y León"></option>
+            <option value="Cataluña"></option>
+            <option value="Extremadura"></option>
+            <option value="Galicia"></option>
+            <option value="La Rioja"></option>
+            <option value="Comunidad de Madrid"></option>
+            <option value="Región de Murcia"></option>
+            <option value="Comunidad Foral de Navarra"></option>
+            <option value="País Vasco"></option>
+            <option value="Comunidad Valenciana "></option>
+            <option value="Ceuta"></option>
+            <option value="Melilla"></option>
+        </datalist>
+
+        <datalist id="provincias">
+            <option value="A Coruña"></option>
+            <option value="Álava"></option>
+            <option value="Albacete"></option>
+            <option value="Alicante"></option>
+            <option value="Almería"></option>
+            <option value="Asturias"></option>
+            <option value="Ávila"></option>
+            <option value="Badajoz"></option>
+            <option value="Islas Baleares"></option>
+            <option value="Barcelona"></option>
+            <option value="Burgos"></option>
+            <option value="Cáceres"></option>
+            <option value="Cádiz"></option>
+            <option value="Cantabria"></option>
+            <option value="Castellón"></option>
+            <option value="Ceuta"></option>
+            <option value="Ciudad Real"></option>
+            <option value="Córdoba"></option>
+            <option value="Cuenca"></option>
+            <option value="Girona"></option>
+            <option value="Granada"></option>
+            <option value="Guadalajara"></option>
+            <option value="Guipúzcoa"></option>
+            <option value="Huelva"></option>
+            <option value="Huesca"></option>
+            <option value="Jaén"></option>
+            <option value="La Rioja"></option>
+            <option value="Las Palmas"></option>
+            <option value="León"></option>
+            <option value="Lleida"></option>
+            <option value="Lugo"></option>
+            <option value="Madrid"></option>
+            <option value="Málaga"></option>
+            <option value="Melilla"></option>
+            <option value="Murcia"></option>
+            <option value="Navarra"></option>
+            <option value="Orense"></option>
+            <option value="Palencia"></option>
+            <option value="Pontevedra"></option>
+            <option value="Salamanca"></option>
+            <option value="Segovia"></option>
+            <option value="Sevilla"></option>
+            <option value="Soria"></option>
+            <option value="Tarragona"></option>
+            <option value="Santa Cruz de Tenerife"></option>
+            <option value="Teruel"></option>
+            <option value="Toledo"></option>
+            <option value="Valencia"></option>
+            <option value="Valladolid"></option>
+            <option value="Vizcaya"></option>
+            <option value="Zamora"></option>
+            <option value="Zaragoza"></option>
+        </datalist>
+
+
+        <form action="" method="GET">
+
+
+            <label for="file">Foto de perfil:</label><input type="file" id="file" name="Foto_de_perfil" value="" multiple>
+            <br><br>
+            <label for="name">Nombre:</label><input type="text" id="name" name="Nombre" value="" required autocomplete="name">
+            <br><br>
+            <label for="email">Correo electrónico:</label><input type="email" id="email" name="Correo electrónico" value="" required>
+            <br><br>
+            <label for="pass">Contraseña:</label><input type="password" id="pass" name="Contraseña" value="" minlength="8" pattern="[0-9].*.[A-Z]" required>
+            <br><br>
+            <label for="url">URL de biografia:</label><input type="url" id="url" name="url" value="" placeholder="Escribe la URL de tu página web personal">
+            <br><br>
+            <label for="date">Fecha de nacimiento:</label><input type="date" id="date" name="Fecha" value="">
+            <br><br>
+            <label for="time">Tiempo:</label><input type="time" id="time" name="Tiempo" value="">
+            <br><br>
+            <label for="date_time">Fecha y hora:</label><input type="datetime" id="date_time" name="Fecha y hora" value="">
+            <br><br>
+            <label for="month">Mes:</label><input type="month" id="month" name="Mes" value="">
+            <br><br>
+            <label for="week">Semana:</label><input type="week" id="week" name="Semana" value="">
+            <br><br>
+            <label for="num">Número:</label><input type="number" id="num" name="Numero" value="" min="0" max="10">
+            <br><br>
+            <label for="dir">Dirección:</label><input type="text" id="dir" name="dirección" value="" placeholder="Introduzca su dirección" autofocus required autocomplete="address-line1">
+            <br><br>
+            <label for="prov">Provincia:</label><input type="text" id="prov" name="Provincia" value="" list="provincias">
+            <br><br>
+            <label for="ca">Comunidad Autónoma:</label><input type="text" id="ca" name="Comunidad Autónoma" value="" list="c.autonoma" >
+            <br><br>
+            <label for="p_num">Teléfono:</label><input type="tel" id="p_num" name="Telefono" value="">
+            <br><br>
+            <label for="search">Término de búsqueda:</label><input type="search" id="search" name="Termino de busqueda" value="">
+            <br><br>
+            <label for="f_color">Color predeterminado:</label><input type="color" id="f_color" name="Color favorito" value="">
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
 </html>

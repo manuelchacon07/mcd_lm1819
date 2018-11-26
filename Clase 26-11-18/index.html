@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Etiquetas HTML5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style type="text/css">
+        @media only screen and (max-width:1500px) and (min-width:547px) {
+
+            body{
+                background: blue;
+            
+            }
+        }
+        @media only screen and (max-width:794px) and (min-width:547px) {
+
+            body{
+                background: yellow;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>VIDEO</h1>
+    <video controls height="500" width="600" autoplay poster="1212.jpg">
+        <source src="google.mp4">
+        <source src="google.ogv">
+        <source src="google.mp4" type="video/mp4; codecs=''">
+    </video>
+
+    <h1>AUDIO</h1>
+    <audio>
+        <source src="audio_google.mp3" type="audio/mp3">
+        <source src="" type="">
+        <source src="" type="">
+    </audio>
+
+    <h1>IFRAME</h1>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vKSA_idPZkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12682.25188348881!2d-5.9673969!3d37.37651655!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2ses!4v1543235676140"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+    <h1>OBJECT</h1>
+
+        <object data="<archivo a ejecutar>" type="application/x-shockwave-flash">
+
+        </object>
+
+    <object data="datos.html" type="text/html" style="width: 400; height: 300;"></object>
+
+</body>
+
+</html>

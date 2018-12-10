@@ -1,14 +1,18 @@
 #fondo-web {
     background: gray;
+    margin: 0%;
+    padding: 10px;
 }
 
-#general {
-    border: solid black 2px;
-
+#{
+    border: solid black 4px;
+    padding: 0%;
 }
 
-#cabecera {
+# {
     background: lightgreen;
+    margin: 0%;
+    padding: 0%;
 }
 
 #foto {
@@ -16,11 +20,56 @@
 }
 
 #texto {
-
+    margin: 0%;
 }
 
 #titulo {
-
+    color: rgb(128, 0, 24);
+    
 }
 
-#subtitulo {}
+#subtitulo {
+    color: rgb(118, 192, 136);
+}
+
+.navegador {
+    background: rgb(160, 204, 227);
+    color: rgb(89, 142, 178);
+    padding: 15px;
+    margin: 0%;
+}
+.pagina {
+    float: left;
+}
+.fgfgpagina {
+    border: 1px solid rgb(141, 184, 206);
+    padding: 5px;
+    margin: 0%;
+    float: left;
+    position: relative;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+#cuerpo {
+    background: rgb(254, 247, 188);
+    clear: both;
+}
+.articulo {
+    background: rgb(255, 175, 138);
+}
+.articulo h1 {
+    color: rgb(100, 129, 115);
+}
+.articulo .navegador {
+    background: rgb(248, 169, 131);
+    border: 1px solid rgb(236, 157, 120);
+    color: rgb(100, 129, 115);
+}
+.foto {
+    background: rgb(205, 116, 82);
+}
+footer {
+    background: rgb(249, 171, 132);
+}

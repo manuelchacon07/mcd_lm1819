@@ -7,65 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
-<body>
-    <div id="fondo-web">
-        <div id="general" style="margin:0%; border: solid black 4px; background: gray;">
-            <div id="cabecera" style="margin: 0%">
-                <div id="texto" style="background: lightgreen; margin: 0%;">
-                    <p id="titulo">Página Web Personal</p>
-                    <br>
-                    <p id="subtitulo">Desarollo web, posicionamiento SEO y nuevas tecnologías</p>
-                </div>
+<body id="fondo-web">
+    <div>
+        <div id="page">
+            <div id="header">
+                <p id="title">Página Web Personal</p>
+                <br>
+                <p id="subtitle">Desarollo web, posicionamiento SEO y nuevas tecnologías</p>
             </div>
-            <div class="navegador">
-                <nav>
-                    <div class="pagina">
-                        <a href="">Inicio</a>
-                    </div>
-                    <div class="pagina">
-                        <a href="">Artículos</a>
-                    </div>
-                    <div class="pagina">
-                        <a href="">Cursos</a>
-                    </div>
-                    <div class="pagina">
-                        <a href="">Contacto</a>
-                    </div>
-                </nav>
-            </div>
-            <div id="cuerpo">
-                <div class="articulo">
-                    <div>
+            <nav id="navigator">
+                <a href="#">Inicio</a>
+                <a href="#">Artículos</a>
+                <a href="#">Cursos</a>
+                <a href="#">Contacto</a>
+            </nav>
+
+            <div id="body">
+                <div id="body-article">
+                    <nav id="navigator-article">
                         <a href="">Inicio</a>
                         /
                         <a href="">Seguridad</a>
-                    </div>
-                    <div class="">
+                    </nav>
+                    <div class="article">
                         <header>
-                            <h1>TITULO PEPE</h1>
+                            <h1>Cómo protegerse de Heartbleed</h1>
                         </header>
                         <article>
-                            sdsdsd
-                            sdsdsdsd
-                            <img class="foto" src="" alt="">
-                            sdsdsdsdsdsdsdsd
-                            sdsdsdsd
+                            <div class="image">
+                                <img src="Heartbleed.png" alt="Heartbleed" >
+                            </div>
+                            <div class="txt-article">
+                                Heartbleed, o CVE-2014-0160, es un gravisimo fallo de seguridad que afecta a todo el mundo de una u otra manera.
+
+                                Se dice que es el fallo más importante de los ultimos tiempos y tanto si te interesa la seguridad como si no, deberias preocuparte. Te explico de qué va el tema, por qué debes preocuparte...
+                            </div>
+                            
                         </article>
-                        <footer></footer>
+                        <footer class="foot-article">
+                            <span>Seguridad</span> · 10/abril/2014 · 4 comentarios
+                        </footer>
+                        <br>
+                        <br>
                     </div>
                 </div>
-                <div id="barra-lateral">
+                <div style="float: right; width: 30%; border: 2px solid black; background: goldenrod">
                     <div>
-                        <div></div>
-                        <div></div>
+                        <div style=" background: gray">Sígeme</div>
+                        <div style="background: lightslategray; margin: 0%">
+                            <img style="padding: 2% ;margin: auto; display: block" src="logo_rsss.png" width="45%" alt="">
+                        </div>
                     </div>
+                    <br>
                     <div>
-                        <div></div>
-                        <div></div>
+                        <div style=" background: gray;">Curso online de HTML</div>
+                        <div style="background: lightslategray">
+                            <img style=" padding: 4%;margin: auto; display: block" src="logo_html5.png" alt="">
+                        </div>
                     </div>
+                    <br>
                     <div>
-                        <div></div>
-                        <div></div>
+                        <div style=" background: gray">Contenido por categorías</div>
+                        <div style="background: lightslategray">
+                            <ul style="color:rgb(0, 153, 255);margin: 0%">
+                                <li>Desarollo (5)</li>
+                                <li>Desarollo web (7)</li>
+                                <li>Empresa (2)</li>
+                                <li>Hardware (2)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

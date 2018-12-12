@@ -1,23 +1,102 @@
+body {
+    font-family: sans-serif;
+}
+
 #fondo-web {
-    background: gray;
-    margin: 0%;
-    padding: 10px;
+    background: rgb(177, 177, 177);
 }
 
-#{
+#page{
     border: solid black 4px;
-    padding: 0%;
+    background: lightblue;
 }
 
-# {
-    background: lightgreen;
+#header {
+    background:rgb(171, 234, 171);
     margin: 0%;
-    padding: 0%;
 }
 
-#foto {
-
+#title {
+    color: rgb(136, 0, 21); 
+    margin: 0%;
 }
+
+#subtitle {
+    color: rgb(120, 193, 147);
+    margin: 0%;
+    padding-bottom: 5%;
+}
+
+#navigator {
+    background: rgb(166, 206, 229);
+}
+
+#navigator a {
+    border-right: 1px solid rgb(144, 184, 207);
+    float: left;
+    text-align: center;
+    padding: 1%;
+    color: rgb(87, 123, 154);
+}
+
+#body {
+    background: rgb(255, 248, 192);
+    padding: 2%;
+    padding-bottom: 40%;
+    clear: both;
+}
+
+#body-article {
+    float: left;
+    width: 60%;
+}
+
+#navigator-article {
+    background: rgb(248, 180, 138);
+    padding: 1%;
+    border-bottom: 1px solid rgb(243, 175, 133);
+    margin-bottom: 0%;
+    color: rgb(110, 138, 124);
+    
+}
+
+.article {
+    background: rgb(255, 186, 144);
+}
+
+.article header {
+    padding-top: 1px;
+    margin-top: 0%;
+    color: rgb(110, 138, 124);
+}
+
+.article article {}
+
+.image {
+    background: rgb(204, 130, 87);
+}
+
+.image img {
+    margin:auto;
+    display:block;
+}
+
+.txt-article {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: rgb(181, 107, 64);
+}
+
+.foot-article {
+    background: rgb(249, 182, 139);
+    color: rgb(201, 130, 98);
+}
+
+.foot-article span {
+    color: rgb(110, 138, 124);
+}
+
+
 
 #texto {
     margin: 0%;

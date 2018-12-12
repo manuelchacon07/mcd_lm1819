@@ -11,28 +11,44 @@ body {
     background: lightblue;
 }
 
+#txt-header {
+    float: left;
+    padding-left: 3%;
+}
+#logo {
+    width: 7%;
+    float: left;
+}
+
 #header {
     background:rgb(171, 234, 171);
     margin: 0%;
+    padding: 2%;
+    padding-bottom: 9%
 }
+
+
 
 #title {
     color: rgb(136, 0, 21); 
     margin: 0%;
+
+
 }
 
 #subtitle {
     color: rgb(120, 193, 147);
     margin: 0%;
-    padding-bottom: 5%;
+
 }
 
 #navigator {
     background: rgb(166, 206, 229);
+    clear: both;
 }
 
 #navigator a {
-    border-right: 1px solid rgb(144, 184, 207);
+    border-right: 1px solid rgb(173, 196, 209);
     float: left;
     text-align: center;
     padding: 1%;
@@ -42,7 +58,7 @@ body {
 #body {
     background: rgb(255, 248, 192);
     padding: 2%;
-    padding-bottom: 40%;
+    padding-bottom: 45%;
     clear: both;
 }
 
@@ -60,6 +76,12 @@ body {
     
 }
 
+#navigator-article a:visited {
+    color: rgb(110, 138, 124);
+}
+
+
+
 .article {
     background: rgb(255, 186, 144);
 }
@@ -70,7 +92,6 @@ body {
     color: rgb(110, 138, 124);
 }
 
-.article article {}
 
 .image {
     background: rgb(204, 130, 87);
@@ -90,65 +111,50 @@ body {
 .foot-article {
     background: rgb(249, 182, 139);
     color: rgb(201, 130, 98);
+    padding: 2%;
 }
 
 .foot-article span {
     color: rgb(110, 138, 124);
 }
 
-
-
-#texto {
-    margin: 0%;
+#navigator-right {
+    float: right;
+    width: 20%;
+    border: 2px solid rgb(159, 150, 168);
+    background: rgb(196, 186, 207);
 }
 
-#titulo {
-    color: rgb(128, 0, 24);
-    
+.title-navigator-right {
+    background: rgb(186, 176, 197);
+    border: 1px solid rgb(159, 150, 168);
+    color: rgb(85, 81, 94);
 }
 
-#subtitulo {
-    color: rgb(118, 192, 136);
+.content-navigator-right {
+    border-bottom: 1px solid rgb(159, 150, 168);
 }
 
-.navegador {
-    background: rgb(160, 204, 227);
-    color: rgb(89, 142, 178);
-    padding: 15px;
-    margin: 0%;
+#categories {
+    color: rgb(65, 125, 182);
 }
-.pagina {
-    float: left;
+
+#categories span {
+    color: rgb(46, 46, 46)
 }
-.fgfgpagina {
-    border: 1px solid rgb(141, 184, 206);
-    padding: 5px;
-    margin: 0%;
-    float: left;
-    position: relative;
+
+#curso-online {
+    padding: 4%;
+    margin: auto;
+    display: block;
 }
+
+#snn {
+    padding: 2%;
+    margin: auto;
+    display: block;
+}
+
 a:link, a:visited, a:active {
     text-decoration:none;
-}
-
-#cuerpo {
-    background: rgb(254, 247, 188);
-    clear: both;
-}
-.articulo {
-    background: rgb(255, 175, 138);
-}
-.articulo h1 {
-    color: rgb(100, 129, 115);
-}
-.articulo .navegador {
-    background: rgb(248, 169, 131);
-    border: 1px solid rgb(236, 157, 120);
-    color: rgb(100, 129, 115);
-}
-.foto {
-    background: rgb(205, 116, 82);
-}
-footer {
-    background: rgb(249, 171, 132);
 }

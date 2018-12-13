@@ -7,65 +7,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
-<body>
-    <div id="fondo-web">
-        <div id="general" style="margin:0%; border: solid black 4px; background: gray;">
-            <div id="cabecera" style="margin: 0%">
-                <div id="texto" style="background: lightgreen; margin: 0%;">
-                    <p id="titulo">Página Web Personal</p>
-                    <br>
-                    <p id="subtitulo">Desarollo web, posicionamiento SEO y nuevas tecnologías</p>
+<body id="fondo-web">
+    <div>
+        <div id="page">
+            <div id="header">
+                <div>
+                    <img id="logo" src="logo_web.jpg" alt="">
                 </div>
+                <div id="txt-header">
+                    <h1 id="title">Página Web Personal</h1>
+                    <br>
+                    <p id="subtitle">Desarollo web, posicionamiento SEO y nuevas tecnologías</p>
+                </div>
+
+                
             </div>
-            <div class="navegador">
-                <nav>
-                    <div class="pagina">
-                        <a href="">Inicio</a>
-                    </div>
-                    <div class="pagina">
-                        <a href="">Artículos</a>
-                    </div>
-                    <div class="pagina">
-                        <a href="">Cursos</a>
-                    </div>
-                    <div class="pagina">
-                        <a href="">Contacto</a>
-                    </div>
-                </nav>
-            </div>
-            <div id="cuerpo">
-                <div class="articulo">
-                    <div>
+            <nav id="navigator">
+                <a href="#">Inicio</a>
+                <a href="#">Artículos</a>
+                <a href="#">Cursos</a>
+                <a href="#">Contacto</a>
+            </nav>
+
+            <div id="body">
+                <div id="body-article">
+                    <nav id="navigator-article">
                         <a href="">Inicio</a>
                         /
                         <a href="">Seguridad</a>
-                    </div>
-                    <div class="">
+                    </nav>
+                    <div class="article">
                         <header>
-                            <h1>TITULO PEPE</h1>
+                            <h1>Cómo protegerse de Heartbleed</h1>
                         </header>
                         <article>
-                            sdsdsd
-                            sdsdsdsd
-                            <img class="foto" src="" alt="">
-                            sdsdsdsdsdsdsdsd
-                            sdsdsdsd
+                            <div class="image">
+                                <img src="Heartbleed.png" alt="Heartbleed" >
+                            </div>
+                            <div class="txt-article">
+                                Heartbleed, o CVE-2014-0160, es un gravisimo fallo de seguridad que afecta a todo el mundo de una u otra manera.
+
+                                Se dice que es el fallo más importante de los ultimos tiempos y tanto si te interesa la seguridad como si no, deberias preocuparte. Te explico de qué va el tema, por qué debes preocuparte...
+                            </div>
+                            
                         </article>
-                        <footer></footer>
+                        <footer class="foot-article">
+                            <span>Seguridad</span> · 10/abril/2014 · 4 comentarios
+                        </footer>
+                        <br>
+                        <br>
                     </div>
                 </div>
-                <div id="barra-lateral">
+                <div id="navigator-right">
                     <div>
-                        <div></div>
-                        <div></div>
+                        <div class="title-navigator-right">Sígeme</div>
+                        <div class="content-navigator-right">
+                            <img id="snn" src="logo_rsss.png" width="45%" alt="">
+                        </div>
                     </div>
+                    <br>
                     <div>
-                        <div></div>
-                        <div></div>
+                        <div  class="title-navigator-right">Curso online de HTML</div>
+                        <div class="content-navigator-right">
+                            <img id="curso-online" src="logo_html5.png" alt="">
+                        </div>
                     </div>
+                    <br>
                     <div>
-                        <div></div>
-                        <div></div>
+                        <div class="title-navigator-right">Contenido por categorías</div>
+                        <div class="content-navigator-right">
+                            <ul id="categories">
+                                <li>Desarollo <span>(5)</span></li>
+                                <li>Desarollo web <span>(7)</span></li>
+                                <li>Empresa <span>(2)</span></li>
+                                <li>Hardware <span>(2)</span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

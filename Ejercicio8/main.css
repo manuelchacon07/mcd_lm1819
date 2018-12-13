@@ -1,75 +1,160 @@
+body {
+    font-family: sans-serif;
+}
+
 #fondo-web {
-    background: gray;
-    margin: 0%;
-    padding: 10px;
+    background: rgb(177, 177, 177);
 }
 
-#{
+#page{
     border: solid black 4px;
-    padding: 0%;
+    background: lightblue;
 }
 
-# {
-    background: lightgreen;
+#txt-header {
+    float: left;
+    padding-left: 3%;
+}
+#logo {
+    width: 7%;
+    float: left;
+}
+
+#header {
+    background:rgb(171, 234, 171);
     margin: 0%;
-    padding: 0%;
+    padding: 2%;
+    padding-bottom: 9%
 }
 
-#foto {
 
-}
 
-#texto {
+#title {
+    color: rgb(136, 0, 21); 
     margin: 0%;
+
+
 }
 
-#titulo {
-    color: rgb(128, 0, 24);
+#subtitle {
+    color: rgb(120, 193, 147);
+    margin: 0%;
+
+}
+
+#navigator {
+    background: rgb(166, 206, 229);
+    clear: both;
+}
+
+#navigator a {
+    border-right: 1px solid rgb(173, 196, 209);
+    float: left;
+    text-align: center;
+    padding: 1%;
+    color: rgb(87, 123, 154);
+}
+
+#body {
+    background: rgb(255, 248, 192);
+    padding: 2%;
+    padding-bottom: 45%;
+    clear: both;
+}
+
+#body-article {
+    float: left;
+    width: 60%;
+}
+
+#navigator-article {
+    background: rgb(248, 180, 138);
+    padding: 1%;
+    border-bottom: 1px solid rgb(243, 175, 133);
+    margin-bottom: 0%;
+    color: rgb(110, 138, 124);
     
 }
 
-#subtitulo {
-    color: rgb(118, 192, 136);
+#navigator-article a:visited {
+    color: rgb(110, 138, 124);
 }
 
-.navegador {
-    background: rgb(160, 204, 227);
-    color: rgb(89, 142, 178);
-    padding: 15px;
-    margin: 0%;
+
+
+.article {
+    background: rgb(255, 186, 144);
 }
-.pagina {
-    float: left;
+
+.article header {
+    padding-top: 1px;
+    margin-top: 0%;
+    color: rgb(110, 138, 124);
 }
-.fgfgpagina {
-    border: 1px solid rgb(141, 184, 206);
-    padding: 5px;
-    margin: 0%;
-    float: left;
-    position: relative;
+
+
+.image {
+    background: rgb(204, 130, 87);
 }
+
+.image img {
+    margin:auto;
+    display:block;
+}
+
+.txt-article {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: rgb(181, 107, 64);
+}
+
+.foot-article {
+    background: rgb(249, 182, 139);
+    color: rgb(201, 130, 98);
+    padding: 2%;
+}
+
+.foot-article span {
+    color: rgb(110, 138, 124);
+}
+
+#navigator-right {
+    float: right;
+    width: 20%;
+    border: 2px solid rgb(159, 150, 168);
+    background: rgb(196, 186, 207);
+}
+
+.title-navigator-right {
+    background: rgb(186, 176, 197);
+    border: 1px solid rgb(159, 150, 168);
+    color: rgb(85, 81, 94);
+}
+
+.content-navigator-right {
+    border-bottom: 1px solid rgb(159, 150, 168);
+}
+
+#categories {
+    color: rgb(65, 125, 182);
+}
+
+#categories span {
+    color: rgb(46, 46, 46)
+}
+
+#curso-online {
+    padding: 4%;
+    margin: auto;
+    display: block;
+}
+
+#snn {
+    padding: 2%;
+    margin: auto;
+    display: block;
+}
+
 a:link, a:visited, a:active {
     text-decoration:none;
-}
-
-#cuerpo {
-    background: rgb(254, 247, 188);
-    clear: both;
-}
-.articulo {
-    background: rgb(255, 175, 138);
-}
-.articulo h1 {
-    color: rgb(100, 129, 115);
-}
-.articulo .navegador {
-    background: rgb(248, 169, 131);
-    border: 1px solid rgb(236, 157, 120);
-    color: rgb(100, 129, 115);
-}
-.foto {
-    background: rgb(205, 116, 82);
-}
-footer {
-    background: rgb(249, 171, 132);
 }

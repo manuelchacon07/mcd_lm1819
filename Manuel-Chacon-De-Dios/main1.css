@@ -1,0 +1,27 @@
+
+p, span, h1{
+    font: bold;
+}
+
+#primera {
+    background: blue;
+}
+#primera p {
+    font: italic;
+}
+
+.bloque p:active {
+    font-size: 50px;
+}
+
+#pimera + p {
+    font-size: 100px
+}
+
+a:link [href$="com"] a:visited [href$="com"] a:active [href$="com"]   {
+    text-decoration: none;
+}
+
+#enlaces a:link a:visited a:active {
+    color: red;
+}

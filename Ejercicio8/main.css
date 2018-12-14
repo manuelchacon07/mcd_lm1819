@@ -95,6 +95,7 @@ body {
 
 .image {
     background: rgb(204, 130, 87);
+    border-radius: 10px 10px 10px 10px; 
 }
 
 .image img {

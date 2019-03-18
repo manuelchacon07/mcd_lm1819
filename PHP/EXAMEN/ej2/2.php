@@ -26,12 +26,11 @@
     session_start();
     $_SESSION['user'] = $name;
     ?>
-    <form action="3.php">
-        <label for="peso">peso: </label>
-        <input type="number" name="peso" id="peso" required>
-        <label for="altura">altura: </label>
-        <input type="number" name="altura" id="altura" required>
-
+    <form action="3.php" method="GET">
+        <label for="peso">Peso: </label>
+        <input type="number" name="peso" id="peso" required></br>
+        <label for="altura">Altura (en CM): </label>
+        <input type="number" name="altura" id="altura" required></br>
         <input type="submit" value="enviar">
     </form>
 </body>

@@ -16,34 +16,18 @@
 
     $base = $_REQUEST["base"];
     $altura = $_REQUEST["altura"];
-    $area = $_REQUEST['area'];
-    $perimetro = $_REQUEST['perimetro'];
-    $total=0;
-    
-    
-    //errores
-    if ($base = "") {
-        echo "Introduce una base";
-        header("location: 1.php");
-    } elseif ($altura = "") {
-        echo "Introduce una altura";
-        header("location: 1.php");
-    } elseif ($base = "" && $altura = "") {
-        echo "Introduce una base y una altura";
-        header("location: 1.php");
-    } elseif ($area = "" && $perimetro = "" ) {
-        echo "selecciona la cuenta que quieres realizar";
-        header("location: 1.php");
-    } 
-    else {
-    //calculo
-        if (isset($area)) {
-            $total = $base*$altura;
-            echo "$total";
-        } else {
-            $total = ($base*2)+($altura*2);
-            echo "$total";
-        }
+    // No es necesario enviar la opción del radiobutton. Lo puedes validar en el mismo IF
+
+    /* No hace falta poner validadores para errores, pues en el formulario, puedes poner
+    obligatorio los campos de base, altura y los checkbox
+    */
+
+    if ($_REQUEST['option'] == 0){
+        $area = ($base * $altura);
+        print "El área del rectángulo es $area";
+    } else {
+        $perimetro = (($base * 2) + ($altura * 2));
+        print "El perímetro del rectángulo es $perimetro";
     }
 
     ?>

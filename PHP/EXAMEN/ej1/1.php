@@ -14,16 +14,21 @@
     Cuando se pulse en el botón “Calcular” debe mostrar el resultado en la siguiente pantalla.
     -->
 
-    <form action="2.php">
+    <!--
+        Puntos a mejorar:
+            1. Los radiobutton son con el mismo name, sino, ambos serán seleccionables y habrá un error al ejecutar el código.
+            2. Si metes en todos los imput un 'required' no te hará falta meter tantos IF en el código PHP para corregir errores.
+     -->
+    <form action="2.php" method="GET">
     
         <label for="base">Base: </label>
-        <input type="number" id="base" name="base"><br>
+        <input type="number" id="base" name="base" required></br>
         <label for="altura">Altura: </label>
-        <input type="number" id="altura" name="altura"><br>
+        <input type="number" id="altura" name="altura" required></br>
         <label for="area">área: </label>
-        <input type="radio" name="area" value="0"> <br>
+        <input type="radio" name="option" value="0" required> </br>
         <label for="perimetro">perímetro: </label>
-        <input type="radio" name="perimetro" value="1">
+        <input type="radio" name="option" value="1" required> </br>
 
         <input type="submit" value="Calcular">
     </form>

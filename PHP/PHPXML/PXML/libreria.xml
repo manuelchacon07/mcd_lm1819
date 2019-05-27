@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Libreria>
+  <libro isbn="112233">
+    <titulo>El mundo de XML</titulo>
+  </libro>
+</Libreria>
